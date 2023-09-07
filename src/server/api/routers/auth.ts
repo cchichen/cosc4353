@@ -118,7 +118,7 @@ export const authRouter = createTRPCRouter({
         sameSite: "none",
       });
     } catch (e) {
-      // console.log("ERROR", e);
+      console.log("ERROR", e);
     }
 
     return {
