@@ -114,8 +114,8 @@ export const authRouter = createTRPCRouter({
       cookies.set("auth-session-id", sessionToken, {
         expires: sessionexpires,
         httpOnly: true,
-        secure: true,
-        sameSite: "None; Secure", 
+        secure: false,
+        sameSite: "lax", 
       });
     } catch (e) {
       // console.log("ERROR", e);
